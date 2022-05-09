@@ -31,7 +31,11 @@ class UploadImageDemo extends StatefulWidget {
 
 class _UploadImageDemoState extends State<UploadImageDemo> {
 
-  static final String uploadEndPoint = 'http://192.168.56.1/server_pic/upload_image.php';
+  // static final String uploadEndPoint = 'http://192.168.56.1/server_pic/upload_image.php'; //huis
+  // static final String uploadEndPoint = 'http://172.20.10.8:80/server_pic/upload_image.php'; //flat ONDER
+  static final String uploadEndPoint = 'http://192.168.56.1:80/server_pic/upload_image.php'; //flat BO
+  // static final String uploadEndPoint = 'http://10.0.2.207:80/server_pic/upload_image.php'; //flat MOIBLE
+
   Future <File> ?file;
   String status = '';
   String base64Image = '';
